@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ip-address-tracker</title>
+    <!-- link leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import style.css -->
+    <script type="module" crossorigin src="/assets/index-GrruxeEM.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BqpUDrgv.css">
+  </head>
+
+  <body>
+    <!-- top layer -->
+    <div id="topLayer">
+
+      <h1>IP Address Tracker</h1>
+
+      <div id="searchBar">
+        <input type="text" id="ipInputField" placeholder="Search a domain or IPv4 address"> 
+        <button id="searchIP"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='11'%20height='14'%3e%3cpath%20fill='none'%20stroke='%23FFF'%20stroke-width='3'%20d='M2%201l6%206-6%206'/%3e%3c/svg%3e" alt="Right arrow Icon"></button>
+      </div>
+
+      <div id="displayInfo">
+
+        <div id="infoFieldFirst">
+          <div class="fieldTitle">IP ADDRESS</div>
+          <div id="ipAddressValue">IP</div>
+        </div>
+
+        <div id="infoField">
+          <div class="fieldTitle">LOCATION</div>
+          <div id="locationValue">Location</div>
+        </div>
+
+        <div id="infoField">
+          <div class="fieldTitle">TIMEZONE</div>
+          <div id="timezoneValue">Timezone</div>
+        </div>
+
+        <div id="infoFieldLast">
+          <div class="fieldTitle">ISP</div>
+          <div id="ispValue">ISP</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- bottom layer-->
+    <div id="bgLayer">
+      <img id="bgImage" src="/assets/pattern-bg-desktop-tWEft0Vv.png" alt="Decoration Map">
+      <div id="slavmap" style="width: 100%; height: 500px"></div>
+      <div id="app"></div>
+    </div>
+
+    <!-- necessary scripts-->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+  </body>
+</html>
